@@ -1,0 +1,32 @@
+/* 
+    Created on : Jan 2, 2016, 11:51:30 PM
+    Author     : Rajan Gunasekaran
+*/
+
+.captcha-container {
+  background:#000;
+  width:100px;
+  height:45px;
+  float:left;
+}
+.captcha-until-wrap {
+  width:20px;
+  height:43px;
+  float: left;
+  border: 1px solid #000;
+}
+.captcha-until-wrap> div{
+  min-width:20px;
+  min-height:18px;
+  background-repeat:no-repeat;
+}
+.speakar {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABG0lEQVQ4T6XTvyvGURTH8RcGCklJFoNBWUWZ2fzMRilPRCmTmC1+lEWZSJSSmKRYbf4A/gILEYPZoHTqPvX1zfN8lTuee877fM7n3Fvjn6fmn/WKAB14zTWpx2c5VglQh2VsoCUDiPhlunuK+G+AAeyjNxWWc0q4wxd2MJUFdKEBK1jIgRvRjRecYAKbuMB90MdwXcXMZpxiDYP4wCNGAhSAaZxXAUROD+awi3Ws4hCzfwWE80eYT2PEmAcoBWAUNwUKxhE+3SbFVxgujxC1nYguYeISajPAMPcYi9hOCmZwhoff1tiX5PXn1jiESewl0I815icIBaFkC63psimtOjqHF8+VHlIW1o63TCAUt+G96Cn/+Y8VfaZC0DfKMCwR9k4yXgAAAABJRU5ErkJggg==);
+  cursor: pointer;
+
+}
+.refresh {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABKElEQVQ4T6XTQSttURjG8d8xkTBUYiolZuQo3fsJpEhRhoYykLjXF0ApYaCYKhNJ4hu46RZGTBRDmZgxuAPl9mrt2k775GCN9n73ev/Ps/b7rJJvrlJBfztmMIQO1OEWJ9jAEV4wEL2VgElso7GKsWc0pW9vvXlANO+m2gHWcZE292M+ucrY7wBh+yYpz2GtwkGAeitq7wAr+IVQHiuw/xflXP0Mg/kjXKMbP/DnM4PJ/sE/1KMB8Vzz+irgMo2ynAGu0IOfOP1Avg/neERLBljGbxxi9ANABGkYW5jOAG1pjBGSBaxWgSxiCU/own0+SBPYS0EKlchCzP8VYXsWI+l9HPtFUQ7IDpqrOAjlqay5CBC11txl6kygOxxjEw95eNFtrDkDsfE/ZEs1ESf4clEAAAAASUVORK5CYII=);
+  cursor: pointer;
+
+}

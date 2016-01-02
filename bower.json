@@ -1,0 +1,26 @@
+{
+  "name": "captcha-angualr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": ">1.3.0"
+  },
+  "devDependencies": {},
+  "authors": [
+    "RAJAN G"
+  ],
+  "description": "create captcha with is client side javascript as a angular directive",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": ""
+}
