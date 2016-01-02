@@ -52,7 +52,7 @@
                   }
                   var canvas = document.createElement('canvas');
                   canvas.height = "40";
-                  canvas.width = "100";
+                  canvas.width = "130";
                   var ctx = canvas.getContext("2d");
                   ctx.font = "20px Comic Sans MS";
                   ctx.fillStyle = "#FFF";

@@ -1,5 +1,5 @@
 {
-  "name": "captcha-angualr",
+  "name": "y",
   "version": "1.0.0",
   "main": "index.js",
   "ignore": [
@@ -17,10 +17,27 @@
   },
   "devDependencies": {},
   "authors": [
-    "RAJAN G"
+    "RAJAN GUNASEKARAN"
   ],
   "description": "create captcha with is client side javascript as a angular directive",
-  "moduleType": [],
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
   "license": "MIT",
-  "homepage": ""
+  "homepage": "https://github.com/rajan-g/angular-captcha",
+  "keywords": [
+    "angular",
+    "captcha",
+    "javascript",
+    "captcha",
+    "salt",
+    "image",
+    "using",
+    "angular",
+    "js"
+  ]
 }
