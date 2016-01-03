@@ -3,8 +3,7 @@
   "version": "0.0.9",
   "main": "index.js",
   "ignore": [
-    ".jshintrc",
-    "bower.json",
+    ".jshintrc",   
     "**/*.txt",
     "node_modules",
     "bower_components",
