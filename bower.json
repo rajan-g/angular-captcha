@@ -1,6 +1,6 @@
 {
   "name": "angular-captcha",
-  "version": "0.0.9",
+  "version": "1.0.0",
   "main": "index.js",
   "ignore": [
     ".jshintrc",   
