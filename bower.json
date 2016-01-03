@@ -1,9 +1,10 @@
 {
   "name": "angular-captcha",
-  "version": "1.0.0",
+  "version": "0.0.9",
   "main": "index.js",
   "ignore": [
     ".jshintrc",
+    "bower.json",
     "**/*.txt",
     "node_modules",
     "bower_components",
