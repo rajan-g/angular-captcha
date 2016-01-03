@@ -5,7 +5,6 @@
   "ignore": [
     ".jshintrc",
     "**/*.txt",
-    "**/.*",
     "node_modules",
     "bower_components",
     "bower_components",
@@ -33,7 +32,7 @@
     "angular",
     "captcha",
     "javascript",
-    "captcha",
+    "captch",
     "salt",
     "image",
     "using",
