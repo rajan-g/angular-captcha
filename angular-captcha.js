@@ -136,6 +136,7 @@
 					audio.play();
 					audio.onended = function() {
 						if(index <src.length) {
+							audio.currentTime = 0;							
 							audio.src = src[index];
 							audio.play();
 							index++
