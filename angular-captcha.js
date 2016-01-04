@@ -45,7 +45,7 @@
           .directive('captcha', function () {
             return{
               'restrict': 'AE',
-              'template': '<div class="captcha-container"><img /></div><div class="captcha-until-wrap"><div class="speakar" ng-click="speech()"></div><div class="refresh" ng-click="change()"></div></div>',
+              'template': '<div class="captcha-container"><img /></div><div class="captcha-until-wrap"><div class="captcha-speakar" ng-click="speech()"></div><div class="captcha-refresh" ng-click="change()"></div></div>',
               scope: {
                 captcha: '=',
                 captchamatcher: '=',
