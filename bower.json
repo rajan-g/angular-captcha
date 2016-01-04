@@ -8,6 +8,8 @@
     "node_modules",
     "bower_components",
     "bower_components",
+	"sound/*",
+	"node_modules",
     "test",
     "tests"
   ],
