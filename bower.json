@@ -1,6 +1,6 @@
 {
   "name": "angular-captcha",
-  "version": "2.0.8",
+  "version": "2.0.9",
   "main": "index.js",
   "ignore": [
     ".jshintrc",   
@@ -34,7 +34,7 @@
     "angular",
     "captcha",
 	"angular-captcha",
-	"angular-recaptcha"
+	"angular-recaptcha",
     "javascript",
     "captch",
     "salt",
