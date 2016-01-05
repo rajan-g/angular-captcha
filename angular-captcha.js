@@ -45,7 +45,12 @@
           .directive('captcha', function () {
             return{
               'restrict': 'AE',
-              'template': '<div class="captcha-container"><img /></div><div class="captcha-until-wrap"><div class="captcha-speakar" ng-click="speech()"></div><div class="captcha-refresh" ng-click="change()"></div></div>',
+              'template': '<div class="capthcha-wraper">'+
+			  '<div class="captcha-container"><img /></div>'+
+			  '<div class="captcha-until-wrap">'+
+			  '<div class="captcha-speakar" ng-click="speech()"></div>'+
+			  '<div class="captcha-refresh" ng-click="change()"></div>'+
+			  '</div></div>',
               scope: {
                 captcha: '=',
                 captchamatcher: '=',
@@ -53,10 +58,10 @@
                 expected: '='
               },
               link: function (scope, element, attrs, ctrls) {
-                var captchaTextProvider = function (condition) {
+                var captchaTextProvider = function (config) {
                   var text = "";
                   var possible = "";
-                  switch (condition) {
+                  switch (config.expected) {
                     case 'N':
                       possible = "0123456789";
                       break;
@@ -80,7 +85,7 @@
                   return text;
                 };
 
-                var textToImg = function (text) {
+                var textToImg = function (text, config) {
                   var formatedText = "";
                   for (var i = 0; i < text.length; i++) {
                     formatedText += text[i];
@@ -93,8 +98,8 @@
                   canvas.height = "40";
                   canvas.width = "130";
                   var ctx = canvas.getContext("2d");
-                  ctx.font = "20px Comic Sans MS";
-                  ctx.fillStyle = "#FFF";
+                  ctx.font = config.fontStyle ? config.fontStyle : "20px Comic Sans MS";
+                  ctx.fillStyle = config.fontColor ? config.fontColor : "#FFF";
                   if (attrs['captcha3d']) {
                     //drawTextIn3D(ctx, formatedText,canvas.width/2, canvas.height/2,4);
                     ctx.fillText(formatedText, 0, 25);
@@ -157,10 +162,25 @@
                 };
 
                 var initCaptcha = function () {
-                  var expected = attrs['expected'];
-                  var captchaText = captchaTextProvider(expected);
-                  element[0].childNodes[0].childNodes[0].src = textToImg(captchaText);
-                  element[0].childNodes[0].className  = 'captcha-container bg'+Math.floor(Math.random()*9);
+                  var config = {
+                    expected: attrs['expected'],
+                    bgColor: attrs['bgcolor'],
+                    bgClass: attrs['bgclass'],
+                    fontStyle: attrs['fontstyle'],
+                    fontColor: attrs['fontcolor'],
+                  };
+                  var captchaText = captchaTextProvider(config);
+                  element[0].childNodes[0].childNodes[0].childNodes[0].src = textToImg(captchaText, config);
+                  if(config.bgColor || config.bgClass) {
+                    if(config.bgColor) {
+                      element[0].childNodes[0].childNodes[0].style.background = config.bgColor;
+                    }
+                    if(config.bgColor) {
+                      element[0].childNodes[0].childNodes[0].className = 'captcha-container '+config.bgClass;
+                    }
+                  }else {
+                    element[0].childNodes[0].childNodes[0].className = 'captcha-container bg' + Math.floor(Math.random() * 9);
+                  }
                   var matcher = attrs['captchamatcher'];
                   scope.$parent[matcher] = captchaText;
                   scope.captchaText = captchaText;

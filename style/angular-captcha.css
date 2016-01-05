@@ -3,6 +3,11 @@
     Author     : Rajan Gunasekaran
 */
 
+.capthcha-wraper {
+  border: 2px solid #000;
+  height: 45px;
+  width: 125px;
+}
 .captcha-container {
   background:#000;
   width:100px;
@@ -10,14 +15,16 @@
   float:left;
 }
 .captcha-until-wrap {
-  width:20px;
-  height:43px;
+  width:22px;
+  height:45px;
   float: left;
-  border: 1px solid #000;
+  border-left: 2px solid #000;
 }
 .captcha-until-wrap> div{
-  min-width:20px;
+  min-width:22px;
   min-height:18px;
+  padding: 2px;
+  margin-left: 4px;
   background-repeat:no-repeat;
 }
 .captcha-speakar {

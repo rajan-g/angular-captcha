@@ -13,6 +13,14 @@ default values are Numbers and Alphabet in lowercase and uppercase
   A: Alphabets only
   NAU : Numbers and Alphabet in uppercase
   NAL : Numbers and Alphabet in lowercase
+3.bgclass: you can pply your custom css class,
+Ex: bgclass="myClass"
+4.bgcolor: you can apply custom bg color
+Ex: bgcolor="#FFF",,
+5.fontcolor: you can apply custom text color
+Ex: fontcolor="#000",
+6.fontStyle: you can apply custom css text style
+Ex: fontStyle="22px oblique"
 
 Bower install: 
  bower install angular-captcha --save
