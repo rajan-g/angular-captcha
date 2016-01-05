@@ -1,6 +1,6 @@
 {
   "name": "angular-captcha",
-  "version": "2.0.6",
+  "version": "2.0.8",
   "main": "index.js",
   "ignore": [
     ".jshintrc",   
@@ -20,7 +20,7 @@
   "authors": [
     "RAJAN GUNASEKARAN"
   ],
-  "description": "create captcha with is client side javascript as a angular directive",
+  "description": "create captcha with is client side javascript as a angular directive. No need server integration public key etc..",
   "moduleType": [
     "amd",
     "es6",
@@ -33,6 +33,8 @@
   "keywords": [
     "angular",
     "captcha",
+	"angular-captcha",
+	"angular-recaptcha"
     "javascript",
     "captch",
     "salt",
